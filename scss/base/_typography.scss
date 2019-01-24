@@ -1,0 +1,79 @@
+html,
+body {
+  font-size: 14px;
+}
+body {
+  font: $regular 14px / 1.6 $font_primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.us-t-h1 {
+  font-size: 3.375rem;
+  line-height: 1.1;
+  font-family: $font-primary;
+  font-weight: $extrabold;
+  color: $white;
+  margin-bottom: 15px;
+}
+.us-t-h2 {
+  font-size: 2rem;
+  line-height: 1;
+  font-family: $font-primary;
+  font-weight: $extrabold;
+  color: $brand-color;
+  margin: 0;
+}
+.us-t-h3 {
+  font-size: 1.563rem;
+  line-height: 1;
+  font-family: $font-primary;
+  font-weight: $semibold;
+  color: $brand-color;
+  margin: 0;
+}
+.us-t-h4 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-family: $font-primary;
+  font-weight: $bold;
+  color: $brand-color;
+  margin: 0;
+}
+.us-t-h5 {
+  font-size: 0.875rem;
+  line-height: 1;
+  font-family: $font_secondary;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $brand-color-secondary;
+  margin: 0;
+}
+.us-t-p {
+  font-size: 1rem;
+  line-height: 1.57;
+  font-family: $font_primary;
+  font-weight: $regular;
+  color: $text-color;
+  letter-spacing: 1px;
+}
+.us-t-date,
+.us-t-author {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  font-family: $font_primary;
+  font-weight: $regular;
+  color: $text-color;
+  letter-spacing: 1px;
+}
+.us-t-li {
+  font-size: 1rem;
+  line-height: 1.57;
+  font-family: $font_primary;
+  font-weight: $regular;
+  color: $text-color;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}

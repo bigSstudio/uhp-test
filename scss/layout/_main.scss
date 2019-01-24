@@ -1,0 +1,467 @@
+/// 1. Hero section
+.us-s-hero {
+    height: 500px;
+    position: relative;
+    background-image: url('/assets/img/hero-img.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 0 0 $brand-color-secondary;
+    &:after {
+        position: absolute;
+        content: "";
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+        filter: opacity(.5);
+        z-index: 1;
+    }
+}
+.us-b-hero-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    max-width: 50%;
+    .us-t-h1 {
+        margin: 0;
+    }
+    .us-t-p {
+        color: $white;
+        font-size: 1.25rem;
+        font-weight: $light;
+        margin-bottom: 30px;
+    }
+}
+.us-m-logo {
+    position: relative;
+    margin-bottom: 30px;
+    span {
+        display: inline-block;
+        height: 60px;
+        width: 2px;
+        background: $white;
+        margin-right: 10px;
+        transform-origin: center center;
+        transform: skewX(-45deg);
+        &:first-child {
+            opacity: .3;
+        }
+        &:nth-child(2) {
+            opacity: .7;
+        }
+    }
+}
+
+/// 2. Services section
+.us-s-services {
+    text-align: center;
+    padding: 50px 0 20px;
+    .us-t-h2 {
+        margin-bottom: 50px;
+    }
+    .us-t-h3 {
+        margin-bottom: 25px;
+    }
+}
+.us-b-single-service {
+    margin-bottom: 40px;
+    position: relative;
+    .us-i-icon {
+        display: block;
+        background-color: $brand-color-secondary;
+        border-radius: 50%;
+        padding: 40px;
+        height: 120px;
+        width: 120px;
+        margin: 0 auto 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            height: 40px;
+            fill: $white;
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 25%;
+        height: 50%;
+        width: 1px;
+        background: $light-grey;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/// 3. Latest news section
+.us-s-news {
+    background-image: url('/assets/img/news-bg.png');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    .us-t-h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .us-b-news-wrapper {
+        svg {
+            fill: $brand-color-secondary;
+            height: 1rem;
+            margin-right: 5px;
+        }
+        .card,
+        .media {
+            background-color: $white;
+            border: none;
+            border-radius: 0;
+        }
+    }
+    .us-c-big-article {
+        height: calc( 520px + 10px );
+        padding: 0;
+        position: relative;
+        .card-body {
+            display: flex;
+            padding: 15px 15px 30px;
+            .us-t-p {
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;  
+                overflow: hidden; 
+                font-size: 0.875rem;
+                margin: 0;
+            }
+        }
+        .card-head {
+            margin-top: 260px;
+            padding: 20px 15px 15px;
+            box-shadow: 0 1px 0 0 $light-grey;
+            .us-t-h4 {
+                margin-bottom: 15px;
+            }
+            .us-c-blog-meta span {
+                margin-right: 30px;
+            }
+        }
+    }
+    .us-b-small-articles {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .us-c-small-article {
+        padding: 0;
+        height: 260px;
+        margin: 0 0 10px 10px;
+        position: relative;
+        .us-i-news-img {
+            max-height: 260px;
+            width: 260px;
+        }
+        .media-body {
+            margin-left: 260px;
+            padding: 15px 15px 30px;
+            position: relative;
+            .us-t-h4 {
+                font-size: 1.25rem;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
+            .us-t-p {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;  
+                overflow: hidden; 
+                margin: 15px 0 0;
+                font-size: 0.875rem;
+            }
+        }
+        .triangle {
+            position: absolute;
+            bottom: 0;
+            left: calc( 260px - 100px );
+            bottom: 0;
+            right: 0;
+            background: transparent;
+            width: 0; 
+            height: 0; 
+            border-top: 100px solid $white;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid transparent;
+            transform: rotate(-180deg);
+            .us-t-slanted-date {
+                position: absolute;
+                text-align: center;
+                height: 100px;
+                width: 40px;
+                bottom: 50px;
+                right: -50px;
+                transform: rotate(-180deg);
+                font-weight: $extrabold;
+                font-size: 1rem;
+                line-height: 1.2;
+                color: $brand-color;
+                b {
+                    font-size: 1.625rem;
+                    color: $brand-color-secondary;
+                }
+            }
+        }
+    }
+    .us-i-news-img {
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        height: 260px;
+        max-height: 260px;
+        width: 100%;
+        left: -1.25px;
+    }
+}
+
+/// 4. References section
+.us-s-references {
+    padding: 50px 0 0;
+    .us-t-h2 {
+        text-align: center;
+    }
+}
+.us-c-reference-slider {
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    
+    .slick-dots {
+        display: inline-flex;
+        margin: 70px auto 0;
+        list-style: none;
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 2px;
+                height: 2px;
+                padding: 6px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                border-radius: 50%;
+                outline: none;
+                background: $brand-color-secondary;
+            }
+            &.slick-active {
+                button {
+                    background: $brand-color;
+                }
+            }
+        }
+    }
+    .us-c-single-reference {
+        height: calc( 325px + 15px ); 
+        width: 50%;
+        padding: 15px;
+        img {
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+            height: 325px; 
+            width: 100%;
+            box-shadow: 0px 0px 25px 7px rgba(204, 204, 223, 0.5);
+              
+        }
+    }
+}
+
+/// 5. Testimonials section
+.us-s-testimonials {
+    padding: 50px 0;
+    background-color: $light-grey;
+    .us-c-single-testimonial {
+        .rounded-circle {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 10px;
+        }
+    }
+    .blockquote {
+        padding: 0;
+        margin: 0;
+        .us-t-p {
+            margin: 0;
+        }
+    }
+    .blockquote-footer {
+        text-align: right;
+        padding-top: 20px;
+    }
+    .us-t-h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+/// 6. Client logos section
+.us-s-client-logos {
+    padding: 40px 0;
+    .d-flex {
+        align-items: center;
+    }
+    img {
+        filter: grayscale(1);
+        width: auto;
+        max-height: 30px;
+    }
+}
+
+/// 7. CTA divider section
+.us-s-cta-divider {
+    padding: 40px 0;
+    background-image: url('/assets/img/cta-divider-bg.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px 0 0 $brand-color-secondary;
+    .us-b-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .us-b-cta-text {
+        text-align: left;
+        .us-t-h2,
+        .us-t-p {
+            color: $white;
+        }
+        .us-t-p {
+            font-size: 1.063rem;
+        }
+    }
+    .us-c-full-btn {
+        margin: auto 0;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    /// 1. Hero section
+    .us-s-hero {
+        height: auto;
+        padding: 30px 0;
+    }
+    .us-b-hero-wrapper {
+        width: 100%;
+        max-width: 100%;
+        .us-t-h1 {
+            font-size: 2rem;
+        }
+        .us-t-p {
+            font-size: 1rem;
+        }
+    }
+    .us-m-logo {
+        margin-bottom: 20px;
+        span {
+            height: 30px;
+            width: 1px;
+        }
+    }
+
+    /// 2. Services section
+    .us-s-services {
+        .us-t-h2 {
+            margin-bottom: 40px;
+        }
+        .us-t-h3 {
+            margin-bottom: 20px;
+        }
+    }
+    .us-b-single-service {
+        margin-bottom: 40px;
+        .us-i-icon {
+            margin: 0 auto 20px;
+        }
+        &:after {
+            display: none;
+        }
+    }
+
+    /// 3. Latest news section
+    .us-s-news {
+        .us-t-h2 {
+            margin-bottom: 40px;
+        }
+        .us-c-big-article {
+            margin-bottom: 10px;
+        }
+        .us-c-small-article {
+            .media-body {
+                height: 100%;
+            }
+        }
+    }
+
+    /// 4. References section
+    .us-s-references {
+        padding: 40px 0 0;
+    }
+    /// 6. Client logos section
+    .us-s-client-logos {
+        .d-flex {
+            flex-wrap: wrap;
+        }
+        img {
+            margin: 10px 20px;
+        }
+    }
+
+    /// 7. CTA divider section
+    .us-s-cta-divider {
+        .us-b-cta-btn {
+            justify-content: center;
+        }
+        .us-c-full-btn {
+            margin: 20px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    /// 3. Latest news section
+    .us-s-news {
+        
+        .us-c-small-article {
+            height: auto;
+            .us-i-news-img {
+                width: 100%;
+                height: 260px;
+            }
+            .media-body {
+                width: 100%;
+                margin-top: 260px;
+                margin-left: 0;
+            }
+            .triangle {
+                bottom: calc( 260px - 90px );
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
