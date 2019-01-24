@@ -38,5 +38,6 @@
  
  PS.
 Some details were not designed perfectly and seemed too big on 1376/768px resolution, so I fixed them to match the rest of the site.
+Also, "a href" tags are missing title tags and images are mostly missing alt tags (important for SEO), but in a lack of time I found it uncessary for testing purposes.
 
-Website is pushed to GitHub for versioning, and will be hosted on https://bigsstudio.com.
+Website is pushed to GitHub for versioning, and is hosted on https://bigsstudio.com/uhp/.
